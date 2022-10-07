@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int u,a,f=9;
+    printf("Enter Number\n");
+    scanf("%d",&u);
+    printf(" Oct (8)= %o  " ,u,u);
+    printf("Hex(16)=%x ;  ",u,u);
+    printf("3)%x \n",u>>4);
+
+    printf("Enter Number\n");
+    scanf("%d",&a);
+    printf(" Hex(16)= %x  " ,a,a);
+    printf("5)Hex(16)%x^%x=%s .",u,a,a^u);
