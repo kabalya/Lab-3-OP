@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+#define MIN_VALUE -56
+#define MAX_VALUE 56
+
+    void main()
+    {
+        int a ;
+        printf("Enter a number \n");
+        scanf ("%d",&a);
+        int b = MIN_VALUE <= a && a <= MAX_VALUE;
+
+
+        printf("Number %d is from  %d to %d :  %s  \n", a, MIN_VALUE, MAX_VALUE, b ? "Yes":"No");
+
+        int d;
+        scanf("%d",&d);
+        printf("%d",(d>>8)%2);
+
+
+    }
