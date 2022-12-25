@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+struct Triangle
+{
+    int x1,y1;
+    int x2,y2;
+   struct Triangle tr)
+{
+    int a,c;
+    a=sqrt(abs(tr.x2-tr.x1)*abs(tr.x2-tr.x1)+abs(tr.x2-tr.x1)*abs(tr.y2-tr.y1));
+    c=sqrt(abs(tr.x1-tr.x3)*abs(tr.x1-tr int x3,y3;
+};
+int Perimeter(.x3)+abs(tr.x1-tr.x3)*abs(tr.y1-tr.y3));
+
+return a+a+c;
+}
+int Square(struct Triangle tr) {
+    int a, h, c;
+    a = sqrt(abs(tr.x2 - tr.x1) * abs(tr.x2 - tr.x1) + abs(tr.x2 - tr.x1) * abs(tr.y2 - tr.y1));
+    c=sqrt(abs(tr.x1-tr.x3)*abs(tr.x1-tr.x3)+abs(tr.x1-tr.x3)*abs(tr.y1-tr.y3));
+    h = sqrt((abs(tr.x2 - tr.x1) * abs(tr.x2 - tr.x1) + abs(tr.x2 - tr.x1) * abs(tr.y2 - tr.y1)) - (abs(tr.x1-tr.x3)*abs(tr.x1-tr.x3)+abs(tr.x1-tr.x3)*abs(tr.y1-tr.y3)) / 4);
+
+    return c / 2 * h;
+
+}
+int main ()
+{
+    struct Triangle tr;
+    printf(" Enter points of triangle");
+     scanf("%d %d",&tr.x1,&tr.y1);
+     scanf("%d %d",&tr.x2,&tr.y2);
+     scanf("%d %d",&tr.x3,&tr.y3);
+
+    printf("Perimeter=%d", Perimeter(tr));
+    printf("Square=%d", Square(tr));
+
+}
