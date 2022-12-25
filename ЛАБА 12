@@ -1,0 +1,17 @@
+#include <stdio.h>
+int summa (int a,int b)
+{ return a+b;}
+int main()
+{
+    int a, b, summ;
+
+    scanf("%d%d", &a, &b);
+summ = a + b;
+
+FILE *file = fopen("gg.txt", "w");
+
+fprintf(file,"%d",summ);
+fclose(file);
+
+return 0;
+}
