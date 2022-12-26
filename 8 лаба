@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+    char string1[10];
+    char string2[10];
+    char *str1, *str2;
+    str1 = string1;
+    str2 = string2;
+    int i = 0;
+    int j = 0;
+    int result;
+    int n;
+    printf("Enter N ");
+    scanf("%d", &n);
+    printf("Enter 1 string ");
+    scanf("%s", &string1);
+    printf("Enter 2 string ");
+    scanf("%s", &string2);
+    // result=strcmp(str1,str2);
+
+    while (string1[i] != '\0') {
+        ++str1;
+        i++;
+
+    }
+    while (j < n) {
+        *str1 = *str2;
+
+        str1++;
+        str2++;
+
+        j++;
+    }
+
+    printf("2=%s ", string1);
+
+    printf("4=%d\n", strncmp(str1, str2, n));
+
+    char *Last_entering=strrchr(string1, '1');
+    printf("9=%s \n", Last_entering  );
+
+
+    //printf("%s \n",strcspn(string1,string2));
+    char* length = strcspn(string1, string2);
+    printf("11= %d\n", length);
+
+
+    char *p;
+
+    p = strtok(string1, "1");
+    if (p) {printf("13=%s\n", p);}
+   p = strtok(NULL, "1");
+    if (p)   printf("13=%s\n", p);
+
+    return 0;
+}
